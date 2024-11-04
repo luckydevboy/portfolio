@@ -8,6 +8,11 @@ const nunito = Nunito({
   display: "swap",
 });
 
+export const metadata = {
+  title: "Mohammad Reza Ghasemi",
+  description: "Mohammad Reza Ghasemi's portfolio",
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{

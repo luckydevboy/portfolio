@@ -5,7 +5,6 @@ import Image from "next/image";
 import { useState } from "react";
 import { MenuIcon, XIcon } from "lucide-react";
 
-import Logo from "@/assets/images/logo.svg";
 import { Navbar } from "@/components";
 
 const Header = () => {
@@ -16,7 +15,7 @@ const Header = () => {
       <div className="max-w-screen-2xl w-full mx-auto px-4 flex justify-between items-center md:px-6 md:grid md:grid-cols-[1fr,3fr,1fr]">
         <h1>
           <Link href="/" className="text-2xl font-bold">
-            <Image src={Logo} alt="Logo" width={40} height={30} />
+            <Image src="/images/logo.svg" alt="Logo" width={40} height={40} />
           </Link>
         </h1>
         <div className="relative md:justify-self-center">

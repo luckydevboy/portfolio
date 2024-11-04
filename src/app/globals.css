@@ -97,6 +97,10 @@ html {
   @apply w-full h-full object-cover;
 }
 
+.section {
+  @apply pt-20 lg:pt-32
+}
+
 /* === Typography === */
 
 .headline-1 {

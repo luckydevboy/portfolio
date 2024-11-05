@@ -110,3 +110,7 @@ html {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.headline-2 {
+  @apply text-3xl lg:text-4xl lg:leading-tight font-semibold;
+}

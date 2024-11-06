@@ -2,41 +2,17 @@ import { ProjectCard } from "@/components";
 
 const works = [
   {
-    imgSrc: "/images/nazanin-portfolio.jpg",
+    imgSrc: "/images/nazanin-portfolio.png",
     title: "Nazanin Portfolio",
-    tags: ["Next.js", "TailwindCSS"],
-    projectLink: "https://nazaninnamjoo.ir/en",
+    tags: ["Next.js", "TailwindCSS, i18n"],
+    projectLink: "https://nazaninnamjoo.ir",
   },
-  {
-    imgSrc: "/images/project-2.jpg",
-    title: "Free stock photo app",
-    tags: ["API", "SPA"],
-    projectLink: "https://pixstock-official.vercel.app/",
-  },
-  {
-    imgSrc: "/images/project-3.jpg",
-    title: "Recipe app",
-    tags: ["Development", "API"],
-    projectLink: "",
-  },
-  {
-    imgSrc: "/images/project-4.jpg",
-    title: "Real state website",
-    tags: ["Web-design", "Development"],
-    projectLink: "https://github.com/codewithsadee-org/wealthome",
-  },
-  {
-    imgSrc: "/images/project-5.jpg",
-    title: "eCommerce website",
-    tags: ["eCommerce", "Development"],
-    projectLink: "https://github.com/codewithsadee/anon-ecommerce-website",
-  },
-  {
-    imgSrc: "/images/project-6.jpg",
-    title: "vCard Personal portfolio",
-    tags: ["Web-design", "Development"],
-    projectLink: "https://github.com/codewithsadee/vcard-personal-portfolio",
-  },
+  // {
+  //   imgSrc: "/images/twinkle.jpg",
+  //   title: "Simple Task Management",
+  //   tags: ["Monorepo", "Next.js", "TailwindCSS"],
+  //   projectLink: "https://twinkle.ir",
+  // },
 ];
 
 const Work = () => {

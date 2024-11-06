@@ -18,15 +18,15 @@ const ProjectCard = ({
   className,
 }: Props) => {
   return (
-    <div className={cx("", className)}>
+    <div
+      className={cx(
+        "relative p-4 rounded-2xl bg-zinc-800 hover:bg-zinc-700/50 " +
+          "active:bg-zinc-700/60 ring-1 ring-inset ring-zinc-50/5 transition-colors",
+        className,
+      )}
+    >
       <figure className="img-box">
-        <Image
-          src={imgSrc}
-          alt={title}
-          className="img-cover"
-          objectFit="cover"
-          layout="fill"
-        />
+        <Image src={imgSrc} alt={title} className="img-cover" fill />
       </figure>
       <div>
         <div>

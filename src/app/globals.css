@@ -118,3 +118,9 @@ html {
 .title-1 {
   @apply text-[22px] font-normal;
 }
+
+/* === Text Field === */
+
+.label {
+  @apply black text-zinc-200 text-sm font-normal mb-2;
+}

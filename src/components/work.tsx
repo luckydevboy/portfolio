@@ -4,7 +4,7 @@ const works = [
   {
     imgSrc: "/images/nazanin-portfolio.png",
     title: "Nazanin Portfolio",
-    tags: ["Next.js", "TailwindCSS, i18n"],
+    tags: ["Next.js", "TailwindCSS", "i18n"],
     projectLink: "https://nazaninnamjoo.ir",
   },
   // {

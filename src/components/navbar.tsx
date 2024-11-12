@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useEffect, MouseEventHandler } from "react";
+import { useRef, useEffect } from "react";
 import Link from "next/link";
 import { cx } from "class-variance-authority";
 
@@ -62,7 +62,7 @@ const Navbar = ({ isOpen }: Props) => {
     },
     {
       label: "Contact",
-      link: "#contact",
+      link: "#contact.tsx",
       className: "nav-link md:hidden",
     },
   ];

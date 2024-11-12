@@ -105,8 +105,12 @@ const Contact = () => {
           </div>
         </div>
 
-        <form action="" method="POST" className="xl:pl-10 2xl:pl-20">
-          <div className="md:grid md:items-center md:gridc-cols-2 md:gap-2">
+        <form
+          action="https://getform.io/f/azyynwob"
+          method="POST"
+          className="xl:pl-10 2xl:pl-20"
+        >
+          <div className="md:grid md:items-center md:gridc-cols-2 md:gap-2 space-y-4 ">
             <div className="mb-4">
               <label htmlFor="name" className="label">
                 Name
@@ -147,11 +151,14 @@ const Contact = () => {
                 rows={4}
                 required
                 placeholder="Message..."
-                className="text-field"
+                className="text-field resize-y min-h-32 max-h-80"
               />
             </div>
 
-            <button type="submit" className="btn btn-primary">
+            <button
+              type="submit"
+              className="btn btn-primary [&]:max-w-full w-full justify-center"
+            >
               Submit
             </button>
           </div>

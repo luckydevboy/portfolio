@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, MouseEvent, useState } from "react";
 import Link from "next/link";
 import { cx } from "class-variance-authority";
 
@@ -11,6 +11,20 @@ type Props = {
 const Navbar = ({ isOpen }: Props) => {
   const lastActiveLink = useRef<HTMLAnchorElement>(null);
   const activeBox = useRef<HTMLDivElement>(null);
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
+  useEffect(() => {
+    if (isClient) {
+      window.addEventListener("resize", initActiveBox);
+      return () => {
+        window.removeEventListener("resize", initActiveBox);
+      };
+    }
+  }, [isClient]);
 
   const initActiveBox = () => {
     if (activeBox.current && lastActiveLink.current) {
@@ -23,18 +37,18 @@ const Navbar = ({ isOpen }: Props) => {
   };
 
   useEffect(initActiveBox, []);
-  window.addEventListener("resize", initActiveBox);
 
-  const activeCurrentLink = (e: any) => {
+  const activeCurrentLink = (e: MouseEvent<HTMLAnchorElement>) => {
     lastActiveLink.current?.classList.remove("active");
-    e.target.classList.add("active");
-    lastActiveLink.current = e.target;
+    e.currentTarget.classList.add("active");
+    // @ts-expect-error: current is immutable
+    lastActiveLink.current = e.currentTarget;
 
     if (activeBox.current && lastActiveLink.current) {
-      activeBox.current.style.top = e.target.offsetTop + "px";
-      activeBox.current.style.left = e.target.offsetLeft + "px";
-      activeBox.current.style.width = e.target.offsetWidth + "px";
-      activeBox.current.style.height = e.target.offsetHeight + "px";
+      activeBox.current.style.top = e.currentTarget.offsetTop + "px";
+      activeBox.current.style.left = e.currentTarget.offsetLeft + "px";
+      activeBox.current.style.width = e.currentTarget.offsetWidth + "px";
+      activeBox.current.style.height = e.currentTarget.offsetHeight + "px";
     }
   };
 

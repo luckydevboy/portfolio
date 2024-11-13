@@ -86,7 +86,7 @@ const Footer = () => {
             </div>
 
             <div>
-              <p>Socials</p>
+              <p className="mb-2">Socials</p>
               <ul>
                 {socials.map(({ label, href }, key) => (
                   <li key={key}>

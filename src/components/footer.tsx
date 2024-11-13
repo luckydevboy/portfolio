@@ -54,7 +54,7 @@ const Footer = () => {
   return (
     <footer className="section">
       <div className="container">
-        <div className="lg:grid lg:grid-cols-2">
+        <div className="lg:grid lg:grid-cols-2 reveal-up">
           <div className="mb-10">
             <h2 className="headline-1 mb-8 lg:max-w-[12ch]">
               Let&apos;s work together today!

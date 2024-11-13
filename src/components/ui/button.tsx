@@ -31,8 +31,8 @@ const Button = ({
           variant === "outline" && "btn-outline",
         )}
       >
-        {icon}
         {children}
+        {icon}
       </Link>
     );
   } else {
@@ -45,8 +45,8 @@ const Button = ({
           variant === "outline" && "btn-outline",
         )}
       >
-        {icon}
         {children}
+        {icon}
       </button>
     );
   }

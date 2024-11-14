@@ -55,6 +55,7 @@ const Hero = () => {
               height={800}
               alt="Mohammad Reza Ghasemi"
               className="w-full"
+              priority
             />
           </figure>
         </div>

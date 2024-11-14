@@ -21,7 +21,7 @@ const SkillCard = ({ imgSrc, desc, label, className }: Props) => {
         className="bg-zinc-700/50 rounded-lg overflow-hidden
        w-12 h-12 p-2 group-hover:bg-zinc-900 transition-colors"
       >
-        <Image src={imgSrc} alt={label} width={32} height={32} />
+        <Image src={imgSrc} alt={label} width={32} height={32} loading="lazy" />
       </figure>
 
       <div>

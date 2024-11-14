@@ -3,6 +3,7 @@ import { ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui";
 import Link from "next/link";
 import Image from "next/image";
+import { socialLinks } from "@/data";
 
 const sitemap = [
   {
@@ -24,29 +25,6 @@ const sitemap = [
   {
     label: "Contact me",
     href: "#contact",
-  },
-];
-
-const socials = [
-  {
-    label: "GitHub",
-    href: "https://www.github.com/codewithsadee-org",
-  },
-  {
-    label: "LinkedIn",
-    href: "https://www.linkedin.com/in/codewithsadee",
-  },
-  {
-    label: "Twitter X",
-    href: "https://x.com/codewithsadee_",
-  },
-  {
-    label: "Instagram",
-    href: "https://www.instagram.com/codewithsadee",
-  },
-  {
-    label: "CodePen",
-    href: "https://codepen.io/codewithsadee",
   },
 ];
 
@@ -88,14 +66,14 @@ const Footer = () => {
             <div>
               <p className="mb-2">Socials</p>
               <ul>
-                {socials.map(({ label, href }, key) => (
+                {socialLinks.map(({ alt, href }, key) => (
                   <li key={key}>
                     <Link
                       href={href}
                       target="_blank"
                       className="block text-sm text-zinc-400 py-1 transition-colors hover:text-zinc-200"
                     >
-                      {label}
+                      {alt}
                     </Link>
                   </li>
                 ))}

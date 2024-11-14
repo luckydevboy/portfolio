@@ -3,11 +3,11 @@ import Image from "next/image";
 const aboutItems = [
   {
     label: "Project done",
-    number: 45,
+    number: 12,
   },
   {
     label: "Years of experience",
-    number: 10,
+    number: 4,
   },
 ];
 
@@ -22,7 +22,7 @@ const About = () => {
             applications. Passionate about creating seamless digital
             experiences, I specialize in React, Next.js, TypeScript, and Node.js
             to craft scalable and responsive designs. I&#39;ve had the
-            opportunity to work with companies like SADAD and Fanap Plus,
+            opportunity to work with companies like Snapp, SADAD and Fanap,
             contributing to projects that emphasize functionality and design
             excellence. Let&#39;s connect and build something amazing together!
           </p>

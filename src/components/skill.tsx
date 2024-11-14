@@ -12,9 +12,14 @@ const skillItem = [
     desc: "User Interface",
   },
   {
+    imgSrc: "/images/html.svg",
+    label: "HTML",
+    desc: "Markup Language",
+  },
+  {
     imgSrc: "/images/javascript.svg",
     label: "JavaScript",
-    desc: "Interaction",
+    desc: "Language",
   },
   {
     imgSrc: "/images/nodejs.svg",
@@ -34,18 +39,48 @@ const skillItem = [
   {
     imgSrc: "/images/react.svg",
     label: "React",
+    desc: "Library",
+  },
+  {
+    imgSrc: "/images/typescript.svg",
+    label: "TypeScript",
+    desc: "Library",
+  },
+  {
+    imgSrc: "/images/nextjs.svg",
+    label: "Next.js",
     desc: "Framework",
+  },
+  {
+    imgSrc: "/images/redux.svg",
+    label: "Redux",
+    desc: "State Management",
   },
   {
     imgSrc: "/images/tailwindcss.svg",
     label: "TailwindCSS",
     desc: "User Interface",
   },
+  {
+    imgSrc: "/images/vite.svg",
+    label: "Vite",
+    desc: "Frontend Tooling",
+  },
+  {
+    imgSrc: "/images/git.svg",
+    label: "Git",
+    desc: "Version Control",
+  },
+  {
+    imgSrc: "/images/docker.svg",
+    label: "Docker",
+    desc: "Containerization",
+  },
 ];
 
 const Skill = () => {
   return (
-    <section className="section">
+    <section id="skills" className="section">
       <div className="container">
         <h2 className="headline-2 reveal-up">Essentials Tools I Use</h2>
 

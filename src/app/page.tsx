@@ -15,6 +15,8 @@ export default function Home() {
     const elements = gsap.utils.toArray(".reveal-up");
 
     elements.forEach((element) => {
+      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+      // @ts-expect-error
       gsap.to(element, {
         scrollTrigger: {
           trigger: element,

@@ -54,7 +54,7 @@ const Footer = () => {
   return (
     <footer className="section">
       <div className="container">
-        <div className="lg:grid lg:grid-cols-2">
+        <div className="lg:grid lg:grid-cols-2 reveal-up">
           <div className="mb-10">
             <h2 className="headline-1 mb-8 lg:max-w-[12ch]">
               Let&apos;s work together today!
@@ -105,10 +105,10 @@ const Footer = () => {
         </div>
 
         <div className="flex items-center justify-between pt-10 mb-8">
-          <Link href="">
+          <Link href="#home" className="reveal-up">
             <Image src="/images/logo.svg" alt="Logo" width={40} height={40} />
           </Link>
-          <p className="text-zinc-500 text-sm">
+          <p className="text-zinc-500 text-sm reveal-up">
             &copy; 2024{" "}
             <span className="text-zinc-200">Mohammad Reza Ghasemi</span>
           </p>

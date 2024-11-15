@@ -41,7 +41,7 @@ export default function RootLayout({
 
         {/* Twitter */}
         <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://nazanin.vercel.app/" />
+        <meta property="twitter:url" content="https://mrghasemi1992.ir/" />
         <meta property="twitter:title" content="Mohammad Reza Ghasemi" />
         <meta
           property="twitter:description"

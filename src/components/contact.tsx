@@ -48,7 +48,7 @@ const Contact = () => {
                 id="name"
                 autoComplete="name"
                 required
-                placeholder="Mohammad Reza Ghasemi"
+                placeholder="Your name..."
                 className="text-field reveal-up"
               />
             </div>
@@ -63,7 +63,7 @@ const Contact = () => {
                 id="email"
                 autoComplete="email"
                 required
-                placeholder="mrghasemi1992@gmail.com"
+                placeholder="example@mail.com"
                 className="text-field reveal-up"
               />
             </div>
@@ -77,7 +77,7 @@ const Contact = () => {
                 id="message"
                 rows={4}
                 required
-                placeholder="Message..."
+                placeholder="Your message..."
                 className="text-field resize-y min-h-32 max-h-80 reveal-up"
               />
             </div>

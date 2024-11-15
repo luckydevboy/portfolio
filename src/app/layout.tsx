@@ -36,7 +36,7 @@ export default function RootLayout({
         />
         <meta
           property="og:image"
-          content="https://ik.imagekit.io/mggo9dfob/Mohammad%20Reza/preview-meta-tag.png?updatedAt=1731679597697"
+          content="https://ik.imagekit.io/mggo9dfob/Mohammad%20Reza/preview-meta-tag.png?updatedAt=1731681334431"
         />
 
         {/* Twitter */}
@@ -49,7 +49,7 @@ export default function RootLayout({
         />
         <meta
           property="twitter:image"
-          content="https://ik.imagekit.io/mggo9dfob/Mohammad%20Reza/preview-meta-tag.png?updatedAt=1731679597697"
+          content="https://ik.imagekit.io/mggo9dfob/Mohammad%20Reza/preview-meta-tag.png?updatedAt=1731681334431"
         />
 
         {/* favicon */}

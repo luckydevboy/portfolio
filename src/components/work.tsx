@@ -7,12 +7,12 @@ const works = [
     tags: ["Next.js", "TailwindCSS", "i18n"],
     projectLink: "https://nazaninnamjoo.ir",
   },
-  // {
-  //   imgSrc: "/images/twinkle.jpg",
-  //   title: "Simple Task Management",
-  //   tags: ["Monorepo", "Next.js", "TailwindCSS"],
-  //   projectLink: "https://twinkle.ir",
-  // },
+  {
+    imgSrc: "/images/mreza-portfolio.png",
+    title: "My Portfolio",
+    tags: ["Next.js", "GSAP", "Lenis"],
+    projectLink: "https://www.mrghasemi1992.ir",
+  },
 ];
 
 const Work = () => {

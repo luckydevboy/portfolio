@@ -1,4 +1,5 @@
 import { Nunito } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react";
 
 import "./globals.css";
 import { Footer, Header } from "@/components";
@@ -59,6 +60,7 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer />
+        <Analytics />
       </body>
     </html>
   );

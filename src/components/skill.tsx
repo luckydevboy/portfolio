@@ -2,9 +2,14 @@ import { SkillCard } from "@/components";
 
 const skillItem = [
   {
-    imgSrc: "/images/figma.svg",
-    label: "Figma",
-    desc: "Design tool",
+    imgSrc: "/images/javascript.svg",
+    label: "JavaScript",
+    desc: "Language",
+  },
+  {
+    imgSrc: "/images/react.svg",
+    label: "React",
+    desc: "Library",
   },
   {
     imgSrc: "/images/css3.svg",
@@ -15,11 +20,6 @@ const skillItem = [
     imgSrc: "/images/html.svg",
     label: "HTML",
     desc: "Markup Language",
-  },
-  {
-    imgSrc: "/images/javascript.svg",
-    label: "JavaScript",
-    desc: "Language",
   },
   {
     imgSrc: "/images/nodejs.svg",
@@ -35,11 +35,6 @@ const skillItem = [
     imgSrc: "/images/mongodb.svg",
     label: "MongoDB",
     desc: "Database",
-  },
-  {
-    imgSrc: "/images/react.svg",
-    label: "React",
-    desc: "Library",
   },
   {
     imgSrc: "/images/typescript.svg",
@@ -75,6 +70,11 @@ const skillItem = [
     imgSrc: "/images/docker.svg",
     label: "Docker",
     desc: "Containerization",
+  },
+  {
+    imgSrc: "/images/figma.svg",
+    label: "Figma",
+    desc: "Design tool",
   },
 ];
 

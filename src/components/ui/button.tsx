@@ -5,7 +5,6 @@ import { cx } from "class-variance-authority";
 type Props = {
   href?: string;
   download?: string;
-  target?: "_self" | "_blank";
   children: string;
   icon?: ReactNode;
   className?: string;
@@ -14,8 +13,6 @@ type Props = {
 
 const Button = ({
   href,
-  download,
-  target = "_self",
   children,
   icon,
   className,
@@ -25,14 +22,12 @@ const Button = ({
     return (
       <Link
         href={href}
-        target={target}
         className={cx(
           "btn",
           className,
           variant === "primary" && "btn-primary",
-          variant === "outline" && "btn-outline",
+          variant === "outline" && "btn-outline"
         )}
-        download={download}
       >
         {children}
         {icon}
@@ -45,7 +40,7 @@ const Button = ({
           "btn",
           className,
           variant === "primary" && "btn-primary",
-          variant === "outline" && "btn-outline",
+          variant === "outline" && "btn-outline"
         )}
       >
         {children}

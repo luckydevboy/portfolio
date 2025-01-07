@@ -1,6 +1,6 @@
 import { ProjectCard } from "@/components";
 
-const works = [
+const portfolios = [
   {
     imgSrc: "/images/nazanin-portfolio.png",
     title: "Nazanin Portfolio",
@@ -15,13 +15,13 @@ const works = [
   },
 ];
 
-const Work = () => {
+const Portfolio = () => {
   return (
-    <section id="work" className="section">
+    <section id="portfolio" className="section">
       <div className="container">
         <h2 className="headline-2 mb-8 reveal-up">My Portfolio Highlights</h2>
         <div className="grid gap-x-4 gap-y-5 grid-cols-[repeat(auto-fill,_minmax(280px,_1fr))]">
-          {works.map(({ imgSrc, projectLink, tags, title }, key) => (
+          {portfolios.map(({ imgSrc, projectLink, tags, title }, key) => (
             <ProjectCard
               key={key}
               imgSrc={imgSrc}
@@ -37,4 +37,4 @@ const Work = () => {
   );
 };
 
-export default Work;
+export default Portfolio;

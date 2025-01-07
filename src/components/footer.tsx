@@ -15,8 +15,8 @@ const sitemap = [
     href: "#about",
   },
   {
-    label: "Work",
-    href: "#work",
+    label: "Portfolio",
+    href: "#portfolio",
   },
   {
     label: "Reviews",

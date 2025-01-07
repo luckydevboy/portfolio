@@ -6,7 +6,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 import "lenis/dist/lenis.css";
 
-import { About, Contact, Hero, Skill, Work } from "@/components";
+import { About, Contact, Hero, Skill, Portfolio } from "@/components";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
@@ -38,7 +38,7 @@ export default function Home() {
         <Hero />
         <About />
         <Skill />
-        <Work />
+        <Portfolio />
         <Contact />
       </ReactLenis>
     </main>

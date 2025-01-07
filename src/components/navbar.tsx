@@ -70,8 +70,8 @@ const Navbar = ({ isOpen }: Props) => {
       className: "nav-link",
     },
     {
-      label: "Work",
-      link: "#work",
+      label: "Portfolio",
+      link: "#portfolio",
       className: "nav-link",
     },
     {

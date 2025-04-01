@@ -32,7 +32,7 @@ const Hero = () => {
             <Button
               variant="primary"
               icon={<DownloadCloudIcon className="h-4 w-4 text-zinc-900" />}
-              href="https://docs.google.com/document/d/19-aszxvi0CWGf__3_gSUC8r-xSz_kKigV_v276ge6ys/export?format=pdf"
+              href="https://docs.google.com/document/d/1rrG-xFh9_zkDrSWgGC5EHidTJZKMPFBDRv8fW1cKLLw/export?format=pdf"
             >
               Download CV
             </Button>

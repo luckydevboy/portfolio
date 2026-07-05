@@ -2,139 +2,66 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  @apply bg-zinc-900 text-zinc-50;
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; }
+
+::selection {
+  background: color-mix(in srgb, var(--accent) 30%, transparent);
+  color: var(--text);
 }
 
-/* === Scrollbar === */
-
-html {
-  scroll-behavior: smooth;
+:root {
+  --bg: #09090b;
+  --bg-elev: #121215;
+  --bg-elev-2: #18181c;
+  --border: #26262c;
+  --text: #f4f4f5;
+  --text-dim: #a1a1aa;
+  --text-faint: #71717a;
+  --accent: #38bdf8;
+  --dot: rgba(255, 255, 255, 0.10);
+  --shadow: 0 1px 0 rgba(255,255,255,0.03) inset, 0 8px 30px rgba(0,0,0,0.35);
 }
 
-::-webkit-scrollbar {
-  width: 10px;
+[data-theme="light"] {
+  --bg: #fafafa;
+  --bg-elev: #ffffff;
+  --bg-elev-2: #f4f4f5;
+  --border: #e4e4e7;
+  --text: #18181b;
+  --text-dim: #52525b;
+  --text-faint: #71717a;
+  --accent: #0284c7;
+  --dot: rgba(0, 0, 0, 0.085);
+  --shadow: 0 1px 2px rgba(0,0,0,0.04), 0 10px 30px rgba(0,0,0,0.06);
 }
 
-::-webkit-scrollbar-track {
-  display: none;
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.75s cubic-bezier(0.2, 0.7, 0.2, 1),
+              transform 0.75s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+[data-reveal].in {
+  opacity: 1;
+  transform: none;
 }
 
-::-webkit-scrollbar-thumb {
-  -webkit-border-radius: 20px;
-  border-radius: 20px;
-  background: #27272a;
+.theme-btn {
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+.theme-btn:hover {
+  border-color: color-mix(in srgb, var(--accent) 45%, var(--border)) !important;
+  color: var(--text) !important;
 }
 
-::-webkit-scrollbar-thumb:hover {
-  background: #3f3f46;
-}
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { display: none; }
+::-webkit-scrollbar-thumb { border-radius: 20px; background: var(--border); }
+::-webkit-scrollbar-thumb:hover { background: var(--text-faint); }
 
-/* === Buttons === */
-
-.menu-btn {
-  @apply w-10 h-10 grid place-items-center bg-zinc-50/10
-  rounded-xl ring-inset ring-1 ring-zinc-50/[0.02] backdrop-blur-2xl
-  hover:bg-zinc-50/15 transition-[transform,background-color] active:scale-95;
-}
-
-.btn {
-  @apply max-w-max h-9 flex items-center gap-2 px-4 rounded-xl font-medium
-  text-sm ring-1 ring-zinc-50/5 ring-inset transition-[background-color];
-}
-
-.btn-primary {
-  @apply h-11 bg-green-400 text-zinc-950 hover:bg-green-300 active:bg-green-400;
-}
-
-.btn-secondary {
-  @apply bg-zinc-50 text-zinc-900 active:bg-zinc-50/80;
-}
-
-.btn-outline {
-  @apply h-11 bg-zinc-800 hover:bg-zinc-700 active:bg-zinc-800;
-}
-
-/* === Navbar === */
-
-.navbar {
-  @apply absolute top-full mt-2 right-0 min-w-40 p-2 bg-zinc-50/10
-  rounded-2xl ring-inset ring-1 ring-zinc-50/50 scale-90 isolate
-  blur-sm opacity-0 invisible transition-[opacity,transform,filter]
-  md:static md:flex md:items-center md:mt-0 md:opacity-100 md:blur-0
-  md:visible md:scale-100 backdrop-blur-2xl;
-}
-
-.navbar.active {
-  @apply opacity-100 scale-100 blur-0 visible;
-}
-
-.nav-link {
-  @apply grid items-center h-9 px-4 text-sm font-medium text-zinc-50
-  tracking-wide text-zinc-50/50 hover:text-zinc-50 transition-colors;
-}
-
-.nav-link.active {
-  @apply text-zinc-500 duration-500;
-}
-
-.navbar .active-box {
-  @apply absolute top-2 left-2 right-2 h-9 bg-zinc-50 rounded-lg -z-10
-  transition-[top,left] duration-500;
-}
-
-/* === Utilities === */
-
-.container {
-  @apply px-4 mx-auto lg:px-8 xl:max-w-6xl;
-}
-
-.img-box {
-  @apply bg-zinc-700 overflow-hidden;
-}
-
-.img-cover {
-  @apply w-full h-full object-cover;
-}
-
-.section {
-  @apply pt-20 lg:pt-32
-}
-
-.reveal-up {
-  @apply translate-y-20 opacity-0;
-}
-
-/* === Typography === */
-
-.headline-1 {
-  @apply text-5xl leading-tight font-semibold lg:text-[55px]
-  lg:leading-[1.15] max-w-max;
-  background: -webkit-linear-gradient(0deg, #fafafa, #a1a1aa);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.headline-2 {
-  @apply text-3xl lg:text-4xl lg:leading-tight font-semibold;
-}
-
-.title-1 {
-  @apply text-[22px] font-normal;
-}
-
-/* === Text Field === */
-
-.label {
-  @apply block text-zinc-200 text-sm font-normal mb-2;
-}
-
-.text-field {
-  @apply block outline-none w-full px-3 py-3 text-sm bg-zinc-800 rounded-xl
-  right-1 ring-inset ring-transparent transition-shadow hover:ring-zinc-50/5
-  focus:ring-green-400 focus:ring-2;
-}
-
-.text-field::placeholder {
-  @apply text-zinc-400;
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  [data-reveal] { transition: none; }
 }
